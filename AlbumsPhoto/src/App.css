@@ -1,0 +1,66 @@
+.Albums{
+  width:1100px;
+  height:600px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin:2rem auto;
+  box-shadow:1px 2px 12px 2px lightgray;
+  padding:2rem;
+  border-radius: 20px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:5rem;
+
+}
+.linkss{
+  text-decoration: none;
+  color:black;
+  font-size:2rem;
+}
+.linkss:hover{
+  color:blue;
+  font-weight: bold;
+  transition: 0.3s all ease-in-out;
+}
+.UnderAlbum{
+display: flex;
+
+}
+.UnderAlbums{
+  font-size: 1.5rem;
+  outline: none;
+  text-decoration: none;
+  color:black;
+  cursor:pointer;
+  padding:1rem;
+  margin:0.7rem;
+  width:200px;
+  height: 300px;
+ 
+  box-shadow:0.5px 1px 8px 2px lightgray;
+  text-align: center;
+}
+.UnderAlbums:hover{
+  background-color: rgba(211, 211, 211, 0.493);
+  border-radius: 20px;
+}
+.UnderAlbums:hover{
+  color:blue;
+  transition: 0.3s all ease-in-out;
+  font-size: 1.55rem;
+
+}
+.photo{
+  margin:auto;
+  text-align: center;
+  font-size: 1.2rem;
+  align-items: baseline;
+ 
+}
