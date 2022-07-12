@@ -1,16 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Albums from "./Albums";
 import Photos from "./Photos";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-let albumID;
-
-const getAlbumID = (id) => {
-  albumID = id;
-  console.log(albumID);
-};
-
 const Home = () => {
+  const [albumID, setAlbumID] = useState('');
+  const getAlbumID = (id) => {
+    setAlbumID(id);
+  };
   return (
     <Router>
       <Switch>
@@ -19,7 +16,6 @@ const Home = () => {
           path="/"
           render={(props) => <Albums {...props} getAlbumID={getAlbumID} />}
         />
-        {/* <Route path="/Photos/:props.match.params.id" component={Photos} /> */}
         <Route
           exact
           path="/Photos/:albumID"

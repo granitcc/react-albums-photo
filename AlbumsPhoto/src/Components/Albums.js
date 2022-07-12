@@ -4,17 +4,16 @@ import { Link } from "react-router-dom";
 
 function Albums(props) {
   const [albums, setAlbums] = useState([]);
+
   useEffect(() => {
     axios
       .get("https://jsonplaceholder.typicode.com/albums")
-      .then((res) => {
-        console.log(res);
-        setAlbums(res.data);
-      })
+      .then((res) => setAlbums(res.data))
       .catch((err) => {
         console.log(err);
       });
   }, []);
+  
   return (
     <div className="Albums">
       {albums.map((album, id) => (
@@ -26,7 +25,7 @@ function Albums(props) {
           >
             <h1 style={{ fontWeight: "bold" }}>{album.id}</h1>
             <br />
-           {album.title}
+            {album.title}
           </Link>
         </div>
       ))}

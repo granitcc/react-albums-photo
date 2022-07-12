@@ -1,66 +1,66 @@
-.Albums{
-  width:1100px;
-  height:600px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  margin:2rem auto;
-  box-shadow:1px 2px 12px 2px lightgray;
-  padding:2rem;
-  border-radius: 20px;
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.links{
+.App {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top:5rem;
-
+  margin: auto;
 }
-.linkss{
+.Albums {
+  box-shadow: 1px 2px 12px 2px lightgray;
+  border-radius: 20px;
+  width: 90%;
+  height: 90vh;
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  overflow-y: scroll;
+  justify-content: center;
+  align-items: center;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.linkss {
   text-decoration: none;
-  color:black;
-  font-size:2rem;
+  color: black;
+  font-size: 2rem;
 }
-.linkss:hover{
-  color:blue;
+.linkss:hover {
+  color: blue;
   font-weight: bold;
   transition: 0.3s all ease-in-out;
 }
-.UnderAlbum{
-display: flex;
-
+.UnderAlbum {
+  display: flex;
 }
-.UnderAlbums{
+.UnderAlbums {
   font-size: 1.5rem;
   outline: none;
   text-decoration: none;
-  color:black;
-  cursor:pointer;
-  padding:1rem;
-  margin:0.7rem;
-  width:200px;
+  color: black;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 0.7rem;
+  width: 200px;
   height: 300px;
- 
-  box-shadow:0.5px 1px 8px 2px lightgray;
+  box-shadow: 0.5px 1px 8px 2px lightgray;
   text-align: center;
 }
-.UnderAlbums:hover{
+.UnderAlbums:hover {
   background-color: rgba(211, 211, 211, 0.493);
   border-radius: 20px;
 }
-.UnderAlbums:hover{
-  color:blue;
+.UnderAlbums:hover {
+  color: blue;
   transition: 0.3s all ease-in-out;
   font-size: 1.55rem;
-
 }
-.photo{
-  margin:auto;
+.photo {
+  margin: auto;
   text-align: center;
   font-size: 1.2rem;
   align-items: baseline;
- 
 }

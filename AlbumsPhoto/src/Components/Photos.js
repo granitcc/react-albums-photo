@@ -6,24 +6,17 @@ function Photos(props) {
 
   useEffect(() => {
     axios
-      .get(
-        "https://jsonplaceholder.typicode.com/albums/" +
-          props.albumID +
-          "/photos"
-      )
-      .then((res) => {
-        console.log(res.data);
-        setPhoto(res.data);
-      })
+      .get(`https://jsonplaceholder.typicode.com/albums/${props.albumID}/photos`)
+      .then((res) => setPhoto(res.data))
       .catch((err) => {
         console.log(err);
       });
   }, []);
+
   return (
-    <>
+    <div style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "90%", alignItems: "center"}}>
       <div className="links">
-        {" "}
-        <Link to="/" className="linkss">
+        <Link to={"/"} className="linkss">
           Go to Albums
         </Link>
       </div>
@@ -43,7 +36,7 @@ function Photos(props) {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 
